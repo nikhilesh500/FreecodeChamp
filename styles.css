@@ -1,3 +1,20 @@
+/****************************** Task-15 *****************************/
+ul {
+  list-style-type:circle;
+  padding: 5px;
+}
+li {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  width: max-content;
+}
+li:hover{
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+}
+
 /****************************** Task-14 *****************************/
 *,
 *::before,
