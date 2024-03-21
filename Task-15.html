@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <style>
+      ul {
+        list-style-type:circle;
+        padding: 15px;
+      }
+      li {
+        margin-bottom: 15px;
+        margin-left: 15px;
+      }
+      li:hover{
+        cursor: pointer;
+      }
+      .completed {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>Task Manager</h1>
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Enter task name">
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="taskList">
+      <!-- Tasks will be dynamically added here -->
+    </ul>
+    <script src="./Task-15.js"></script>
+  </body>
+</html>

@@ -1,36 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
-    <style>
-      ul {
-        list-style-type:circle;
-        padding: 15px;
-      }
-      li {
-        margin-bottom: 15px;
-        margin-left: 15px;
-      }
-      li:hover{
-        cursor: pointer;
-      }
-      .completed {
-        text-decoration: line-through;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Learn Regular Expressions by Building a Spam Filter</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
 
-    <h1>Task Manager</h1>
-    <form id="taskForm">
-      <input type="text" id="taskInput" placeholder="Enter task name">
-      <button type="submit">Add Task</button>
-    </form>
-    <ul id="taskList">
-      <!-- Tasks will be dynamically added here -->
-    </ul>
-    <script src="./Task-15.js"></script>
+  <body>
+    <!---------------------------------- Task-14 ---------------------------------->
+
+    <header>
+      <nav>
+        <img
+          class="fcc-logo"
+          src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+          alt="freeCodeCamp logo"
+        />
+      </nav>
+      <h1 class="title">Task-14: Is this Spam?</h1>
+      <p class="description">
+        Enter a phrase to check if it would be marked as spam or not.
+      </p>
+    </header>
+    <main>
+      <label class="message-label" for="message-input">Message: </label>
+      <textarea
+        placeholder="Enter message here"
+        value=""
+        type="text"
+        name="message"
+        id="message-input"
+        rows="10"
+        cols="40"
+      ></textarea>
+      <button class="btn" id="check-message-btn" type="button">
+        Check message
+      </button>
+      <p id="result"></p>
+    </main>
+    <script src="./Task-14.js"></script>
+    
+    <!---------------------------------- Task-16 ---------------------------------->
+    
+    <header>
+      <nav>
+        <img
+        class="fcc-logo"
+        src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+        alt="freeCodeCamp logo"
+        />
+      </nav>
+      <h1 class="title">Task-16: Latest Topics</h1>
+    </header>
+    <main>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th id="topics">Topics</th>
+              <th id="avatars">Avatars</th>
+              <th id="replies">Replies</th>
+              <th id="views">Views</th>
+              <th id="activity">Activity</th>
+            </tr>
+          </thead>
+          <tbody id="posts-container"></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="./Task-16.js"></script>
+
+    <!---------------------------------- Task-17 ---------------------------------->
+
+
+    <footer class="footer">&copy; freeCodeCamp</footer>
   </body>
-</html>
+  </html>
