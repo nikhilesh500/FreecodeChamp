@@ -34,7 +34,6 @@ const bubbleSort = (array) => {
       }
     }
   }
-
   return array;
 }
 const selectionSort = (array) => {
@@ -47,19 +46,16 @@ const selectionSort = (array) => {
         minIndex = j;
       }
     }
-
     const temp = array[i];
     array[i] = array[minIndex];
     array[minIndex] = temp;
   }
-
   return array;
 }
 const insertionSort = (array) => {
   for (let i = 1; i < array.length; i++) {
     const currValue = array[i];
     let j = i - 1;
-
     while (j >= 0 && array[j] > currValue) {
       array[j + 1] = array[j];
       j--;
